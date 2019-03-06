@@ -1,0 +1,41 @@
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.wrapper{
+  min-width: 320px;
+  padding: rem(25px) rem(5px) rem(21px) rem(5px);
+  @include medium{
+    padding: rem(25px) rem(20px) rem(30px) rem(20px);
+  }
+  @include large{
+    max-width: 768px;
+    width: 100%;
+    margin: auto;
+    padding: rem(40px) rem(33px) rem(24px) rem(33px);
+  }
+}

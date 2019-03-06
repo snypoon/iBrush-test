@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="css/main.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css")
+    title Тестовое задание
+  body
+    .wrapper
+      header.header
+        h1.header__title День в фото
+        .header__line
+      main.maincontent
+        section.preview
+          .preview__photo
+            img(src="./images/ship.jpg", alt="photo").photo__main
+          .preview__title
+            span.preview__number 21
+            span.preview__mounth сентября
+          .preview__text
+            span.text__description Мельницы маленькой деревушки Brandmill близи курортного австрийского города Mayerhoffen.
+            span.text__author Фото: Reuters
+        section.gallery
+          ul.gallery__content
+            li.gallery__photo
+              .photo__gallery.sprite__one
+            li.gallery__photo
+              .photo__gallery.sprite__two
+            li.gallery__photo
+              .photo__gallery.sprite__three
+            .addblock-med
+              a(href="http://www.ibrush.ru").adblock__link
+                img(src="./images/add_addidas.jpg").addblock-med__img     
+            li.gallery__photo
+              .photo__gallery.sprite__four
+            li.gallery__photo
+              .photo__gallery.sprite__five
+            li.gallery__photo
+              .photo__gallery.sprite__six
+            li.adblock
+              a(href="http://www.ibrush.ru").adblock__link
+                .adblock__img
+                  img(src="./images/add_1.jpg", alt="photo").photo__ad-horizontal
+                .adblock__content
+                  .adblock__name Рекламный тизер
+                  .adblock__title Театральная паутина
+                  .adblock__text Открытие новых сервисных центров немекого автопрома
+            li.gallery__date
+              span.date__number 20
+              span.date__mounth сентября
+            li.gallery__photo
+              .photo__gallery.sprite__seven
+            li.gallery__photo
+              .photo__gallery.sprite__eight
+            li.gallery__photo
+              .photo__gallery.sprite__nine
+            li.gallery__photo
+              .photo__gallery.sprite__ten
+            li.gallery__photo
+              .photo__gallery.sprite__eleven
+            li.gallery__date
+              span.date__number 19
+              span.date__mounth сентября
+            li.gallery__photo
+              .photo__gallery.sprite__twelve
+            li.gallery__photo
+              .photo__gallery.sprite__thirteen
+            li.gallery__photo
+              .photo__gallery.sprite__fourteen
+            li.gallery__photo
+              .photo__gallery.sprite__fifteen
+            .addblock-large
+              a(href="http://www.ibrush.ru").adblock__link
+                img(src="./images/add_cola.png").addblock-large__img    
+            li.gallery__photo
+              .photo__gallery.sprite__sixteen
+            li.gallery__photo
+              .photo__gallery.sprite__seventeen
+            li.gallery__date
+              span.date__number 18
+              span.date__mounth сентября
+            li.gallery__photo
+              .photo__gallery.sprite__eighteen
+            li.gallery__photo
+              .photo__gallery.sprite__nineteen
+            li.gallery__photo
+              .photo__gallery.sprite__twenty
+            li.gallery__photo
+              .photo__gallery.sprite__twenty-one
+            li.gallery__photo
+              .photo__gallery.sprite__twenty-two
+        section.pagination
+          span.pagination__title Страницы: 
+          ul.pagination__pages
+            li.pagination__item.pagination__item-active
+              a(href="#").pagination__link 1
+            li.pagination__item
+              a(href="#").pagination__link 2
+            li.pagination__item
+              a(href="#").pagination__link 3
+            li.pagination__item
+              a(href="#").pagination__link 4
+            li.pagination__item
+              a(href="#").pagination__link-next Следующая

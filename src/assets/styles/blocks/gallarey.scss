@@ -1,0 +1,87 @@
+.gallery{
+  width: 100%;
+  @include medium{
+    display: flex;
+  }
+  &__content{
+    display: flex;
+    flex-wrap: wrap;
+    @include medium{
+      display: inline;
+      flex-wrap: initial;
+    }
+  }
+  &__photo{
+    margin: 0 rem(3px);
+    margin-bottom: rem(6px);
+    width: rem(71px);
+    height: rem(48px);
+    cursor: pointer;
+    @include medium{
+      width: rem(78px);
+      height: rem(53px);
+      float: left;
+      margin: 0 rem(5px);
+      margin-bottom: rem(10px);
+    }
+    @include large{
+      width: rem(154px);
+      height: rem(104px);
+      margin: 0 rem(10px);
+      margin-bottom: rem(20px);
+    }
+  }
+  &__date{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: rem(71px);
+    height: rem(48px);
+    opacity: 0.8;
+    background-color: white;
+    font-family: "Noto Serif";
+    font-size: rem(14px);
+    margin: 0 rem(3px);
+    margin-bottom: rem(6px);
+    cursor: pointer;
+    @include medium{
+      width: rem(78px);
+      height: rem(53px);
+      margin: 0 rem(5px);
+      margin-bottom: rem(10px);
+      float: left;
+    }
+    @include large{
+      width: rem(160px);
+      height: rem(104px);
+      margin: 0 rem(10px);
+      margin-bottom: rem(20px);
+      float: left;
+    }
+    &::after{
+      content: "►";
+      position: absolute;
+      font-size: rem(5px);
+      right: 10%;
+      top: 30%;
+    }
+  }
+}
+
+.date{
+  &__number{
+    line-height: rem(24px);
+    font-size: 18px;
+    @include large{
+      font-size: 36px;
+      margin-bottom: rem(5px);
+    }
+  }
+  &__mounth{
+    @include large{
+      font-size: 18px;
+    }
+  }
+}

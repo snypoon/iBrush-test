@@ -1,0 +1,15 @@
+@function rem($px) {
+  @return $px / 16px + 0rem;
+}
+
+@mixin medium{
+  @media (min-width: 480px) {
+    @content;
+    }  
+  }
+
+@mixin large{
+  @media (min-width: 768px) {
+    @content;
+    }  
+  }

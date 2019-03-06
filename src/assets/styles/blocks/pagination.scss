@@ -1,0 +1,51 @@
+.pagination{
+  display: flex;
+  margin-top: rem(9px);
+  align-items: center;
+  &__title{
+    display: none;
+    @include medium{
+      display: inline;
+      color:#bebebe;
+      font-family: "Noto Sans";
+      font-size: 13px;
+      margin-right: 25px;
+    }
+  }
+  &__pages{
+    display: flex;
+  }
+  &__item{
+    margin-right: rem(5px);
+    width: rem(34px);
+    height: rem(34px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    &-active{
+      background-color: #e6e6e6;
+      border-radius: 50%;
+    }
+  }
+  &__link{
+    font-family: "Noto Sans";
+    font-size: rem(13px);
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    &:hover{
+      color: #bebebe;
+    }
+  }
+  &__link-next{
+    font-family: "Noto Sans";
+    font-size: rem(13px);
+    color: black;
+    margin-left: rem(10px);
+    &:hover{
+      color: #bebebe;
+    }
+  }
+}

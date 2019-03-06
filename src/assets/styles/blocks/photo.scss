@@ -1,0 +1,20 @@
+.photo{
+  &__main{
+  width: 100%;
+  height: 100%;
+  }
+  &__ad-horizontal{
+    width: rem(100px);
+    height: rem(80px);
+  }
+  &__gallery{
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/spritesheet.png');
+    background-repeat: no-repeat;
+    display: block;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+}

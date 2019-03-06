@@ -1,0 +1,19 @@
+.header{
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+  margin-bottom: rem(15px);
+  &__title{
+    font-family: "Playfair Display";
+    font-size: rem(26px);
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin: 0;
+  }
+  &__line{
+    height: rem(2px);
+    width: 100%;
+    background-color: black;
+    margin-left: rem(20px);
+  }
+}

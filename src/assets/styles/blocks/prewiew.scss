@@ -1,0 +1,81 @@
+
+
+.preview{
+  position: relative;
+  @include medium{
+    margin-bottom: rem(6px);
+  }
+  &__photo{
+    position: relative;
+    overflow: hidden;
+    @include large{
+      &::after{
+        content: "";
+        width: rem(54px);
+        height: rem(54px);
+        background-color: white;
+        transform: rotate(45deg);
+        position: absolute;
+        left: 46%;
+        top: 100%;
+      }
+    }
+  }
+  &__title{
+    position: absolute;
+    top: rem(6px);
+    left: rem(6px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: rem(80px);
+    height: rem(53px);
+    opacity: 0.8;
+    background-color: white;
+    font-family: "Noto Serif";
+    font-size: rem(14px);
+    cursor: pointer;
+    @include large{
+      width: 160px;
+      height: 104px;
+      top: rem(20px);
+      left: rem(20px);
+      &::after{
+        content: "►";
+        position: absolute;
+        font-size: rem(5px);
+        right: rem(20px);
+        top: rem(35px);
+      }
+    }
+  }
+  &__number{
+    @include large{
+      font-size: rem(36px);
+    }
+  }
+  &__mounth{
+    @include large{
+      font-size: rem(18px);
+    }
+  }
+  &__text{
+    display: none;
+    font-family: "Noto Sans";
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+    @include large{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.text{
+  &__author{
+    color: #bebebe;
+    font-weight: 400;
+  }
+}
