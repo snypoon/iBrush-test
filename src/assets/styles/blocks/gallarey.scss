@@ -6,26 +6,35 @@
   &__content{
     display: flex;
     flex-wrap: wrap;
+    margin-left: -3px;
+    margin-right: -3px;
     @include medium{
       display: inline;
       flex-wrap: initial;
+      margin-left: -5px;
+      margin-right: -5px;
     }
+    @include large{
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+    
   }
   &__photo{
     margin: 0 rem(3px);
     margin-bottom: rem(6px);
-    width: rem(71px);
+    width: rem(73px);
     height: rem(48px);
     cursor: pointer;
     @include medium{
-      width: rem(78px);
+      width: rem(80px);
       height: rem(53px);
       float: left;
       margin: 0 rem(5px);
       margin-bottom: rem(10px);
     }
     @include large{
-      width: rem(154px);
+      width: rem(160px);
       height: rem(104px);
       margin: 0 rem(10px);
       margin-bottom: rem(20px);
@@ -37,7 +46,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: rem(71px);
+    width: rem(73px);
     height: rem(48px);
     opacity: 0.8;
     background-color: white;
@@ -47,7 +56,7 @@
     margin-bottom: rem(6px);
     cursor: pointer;
     @include medium{
-      width: rem(78px);
+      width: rem(80px);
       height: rem(53px);
       margin: 0 rem(5px);
       margin-bottom: rem(10px);

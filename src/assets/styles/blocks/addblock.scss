@@ -50,7 +50,7 @@
     margin-bottom: rem(32px);
   }
   @include large{
-    margin: 0 ;
+    margin: 0 rem(10px);
     margin-bottom: rem(28px);
   }
   &__img{
@@ -66,7 +66,7 @@
     height: rem(220px);
     width: rem(160px);
     float: right;
-    margin: 0 ;
+    margin: 0 rem(10px);
     margin-bottom: rem(28px);
   }
   &__img{
